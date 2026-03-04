@@ -25,3 +25,22 @@ testing branch!
 `git merge <branch-name>` -> merge local branch into local main if need change for remote reposity use `git push`.  
 `git push origin -d <branch-name>` -> delete branch from remote repository.  
 `git branch -d <branch-name>` -> delete branch from local machine.  
+  
+## Workflow
+when you wanna change something first you make a new branch.  
+`git branch <new_branch>` to create a branch or `git switch -c <new_branch>` to create and switch into new branch.  
+when you finish changing anything use  
+`git commit -a -m "your message"` to auto stages change and commit  
+but if you make new files and git don't know about it you must manually stage it by using  
+`git add .`  
+after commit your change use  
+`git push origin <branch-name>` to push a new branch into browser.  
+then checkout to main and merge branch by use  
+`git merge <branch-name>` to merge a branch with main locally.  
+then push to update remote repository  
+`git push`  
+then you need to delete closed branch from remote repository by  
+`git push origin -d <branch-name>`  
+then delete closed branch from your local machine by  
+`git branch -d <branch-name>`  
+then your workflow is finished
