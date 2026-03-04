@@ -1,2 +1,2 @@
-# test-MRI-Preprocessing
-test and learn a library about MRI image processing
+# Learning git
+this reposity is used for learning to use git and github
